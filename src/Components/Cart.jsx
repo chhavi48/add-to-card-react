@@ -21,7 +21,7 @@ const Cart = () => {
         return <Items key={curItem.id} {...curItem}/>
         })
     }
-<Items/>
+
 
       
 
