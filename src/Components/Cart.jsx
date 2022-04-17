@@ -1,6 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./Card.css"
+import Items from './Items';
+import {products} from "./Product"
 const Cart = () => {
+    const[item,setitem]=useState(products);
   return (
     <>
     <header>
@@ -11,9 +14,23 @@ const Cart = () => {
     <section>
         <h1>Shoping Cart</h1>
         <p className='total-items'>You have <span className='total-items-count'>7</span> items in shpoing cart</p>
-    <div className='cart-item'>
-        
-    </div>
+      <div className="cart-items">
+          <div className='cart-items-container'>
+    {
+        item.map((curItem) =>{
+        return <Items key={curItem.id} {...curItem}/>
+        })
+    }
+<Items/>
+
+      
+
+      <div className='card-total'>
+          <h3>cart <span>Total:22222000rs</span></h3>
+          <button>CheckOut</button>
+      </div>
+          </div>
+      </div>
     </section>
     </>
   )

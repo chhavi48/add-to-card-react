@@ -147,6 +147,7 @@ header {
 .cart-items-container {
   width: 90%;
   height: 56rem;
+  overflow-y: scroll;
 }
 
 .items-info {
