@@ -1,5 +1,4 @@
 import React from 'react'
-
 const Items = ({description,title,img,price,amount}) => {
   return (
   <>
@@ -11,8 +10,7 @@ const Items = ({description,title,img,price,amount}) => {
               <h2>{title}</h2>
               <p>{description}</p>
           </div>
-
-          <div className="add-minus-quantity">
+<div className="add-minus-quantity">
               <p className="minus">-</p>
               <input type="text" placeholder='2'/>
               <p className='add'>+</p>
@@ -25,6 +23,7 @@ const Items = ({description,title,img,price,amount}) => {
       
       <hr/>
   </>
+
   )
 }
 

@@ -3,7 +3,7 @@ import "./Card.css"
 import Items from './Items';
 import {products} from "./Product"
 const Cart = () => {
-    const[item,setitem]=useState(products);
+const[item,setitem]=useState(products);
   return (
     <>
     <header>
@@ -21,11 +21,7 @@ const Cart = () => {
         return <Items key={curItem.id} {...curItem}/>
         })
     }
-
-
-      
-
-      <div className='card-total'>
+<div className='card-total'>
           <h3>cart <span>Total:22222000rs</span></h3>
           <button>CheckOut</button>
       </div>
